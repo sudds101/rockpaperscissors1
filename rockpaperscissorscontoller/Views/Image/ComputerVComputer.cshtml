@@ -1,0 +1,28 @@
+﻿@model IEnumerable<rockpaperscissorscontoller.Models.ImageModel>
+
+
+@foreach (var item in Model) {
+        
+                @if(item.ImageState == 0)
+                {
+                       
+                    <img src="~/img/paper.png.png" width="150px" />
+
+                    }
+
+                @if(item.ImageState == 1)
+                {
+                       
+                    <img src="~/img/rock.png.png" width="150px" />
+
+                    }
+               
+                 @if(item.ImageState == 2)
+                {
+                       
+                    <img src="~/img/scissors.png.png" width="150px" />
+
+                    }
+     
+}
+   
